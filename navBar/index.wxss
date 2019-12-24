@@ -1,0 +1,72 @@
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  color: #000;
+  z-index: 9999999;
+}
+/* 标题要居中 */
+.nav-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 36rpx;
+  color: #2c2b2b;
+  font-weight: 600;
+  line-height: 32px;
+}
+.nav-title image{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  border-radius: 100%;
+}
+.nav-capsule{
+  position: absolute;
+}
+.back-pre, .back-home {
+  width: 30rpx;
+  height: 36rpx;
+  left: 30rpx;
+}
+.search{
+  font-size: 45rpx;
+  margin-top: 14rpx;
+}
+.other{
+   display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 11;
+  line-height: 1;
+  width: 87px;
+  height: 32px;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+.other text{
+  font-size: 15px;
+  font-weight: bold;
+}
+.home text{
+  font-size: 18px;
+}
+.other .back{
+  width: 50%;
+  text-align: center;
+  border-right: 2rpx solid #e3e3e3;
+  
+}
+.other .home{
+  text-align: center;
+  width: 50%;
+}
