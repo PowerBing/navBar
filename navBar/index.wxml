@@ -10,11 +10,11 @@
       <view bindtap='_navsearch' wx:if='{{!navbarData.showCapsule}}'>
         <view class="iconfont bb-iconsou search"></view>
       </view>
-      <view class="other cl" wx:else>
-        <view class="back fl" catchtap='_navback' >
+      <view class="other" wx:else>
+        <view class="back" catchtap='_navback' >
           <text class="iconfont bb-iconback"></text>
         </view>
-        <view class="home fl" catchtap='_navhome'>
+        <view class="home" catchtap='_navhome'>
           <text class="iconfont bb-iconhome"></text>
         </view>
       </view>

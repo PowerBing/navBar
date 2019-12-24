@@ -1,5 +1,6 @@
 const app = getApp()
 Component({
+  // 获取外部样式
   options: {
     addGlobalClass: true
   },
@@ -8,9 +9,7 @@ Component({
       type: Object,
       value: {},
       observer: function (newVal, oldVal) { }
-    },
-    backg: { type: String },
-
+    }
   },
   data: {
     height: app.globalData.navHeight,
@@ -41,7 +40,7 @@ Component({
     },
     _navsearch() {
       wx.navigateTo({
-        url: '/pages/search/search',
+        url: '',
       })
     }
   }

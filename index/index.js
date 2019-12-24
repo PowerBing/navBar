@@ -1,5 +1,4 @@
-const app = getApp()
-
+const app = getApp();
 Page({
   data: {
     navbarData: {   //自定义顶部导航栏
