@@ -1,4 +1,4 @@
-<view class='nav-wrap' style='height: {{height}}px;background:{{backg}}'>
+<view class='nav-wrap' style='height: {{height}}px;background:{{navbarData.background}}'>
     <!-- // 导航栏 中间的标题 -->
   <view class='nav-title' style='top: {{navTop}}px;'>
   <image wx:if='{{navbarData.head}}' src='{{navbarData.head}}' mode='widthFix'></image>
@@ -10,7 +10,7 @@
       <view bindtap='_navsearch' wx:if='{{!navbarData.showCapsule}}'>
         <view class="iconfont bb-iconsou search"></view>
       </view>
-      <view class="other cl" wx:else style="top:{{height+7}}px">
+      <view class="other cl" wx:else>
         <view class="back fl" catchtap='_navback' >
           <text class="iconfont bb-iconback"></text>
         </view>

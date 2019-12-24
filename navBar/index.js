@@ -16,22 +16,8 @@ Component({
     height: app.globalData.navHeight,
     navTop: app.globalData.navTop,
     navLeft: app.globalData.navLeft,
-    //默认值  默认显示左上角
-    navbarData: {
-      showCapsule: 1,
-      routertime:'',
-      pages:''
-    }
   },
   attached: function () {
-    // 定义导航栏的高度   方便对齐
-    setTimeout(()=>{
-      this.setData({
-        height: app.globalData.navHeight,
-        navTop: app.globalData.navTop,
-        navLeft: app.globalData.navLeft
-      })
-    },800)  
   },
   methods: {
     // 返回上一页面
@@ -54,7 +40,6 @@ Component({
       })
     },
     _navsearch() {
-      app.globalData.share = false;
       wx.navigateTo({
         url: '/pages/search/search',
       })
